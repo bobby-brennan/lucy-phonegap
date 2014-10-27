@@ -12,7 +12,7 @@
         <%- appDescription %>
     </description>
 
-    <author href="<%- authorUrl %>" email="<%- authorEmail %>">
+    <author<%- authorUrl ? ' href="' +  authorUrl + '"' : '' %><%- authorEmail ? ' email="' +  authorEmail + '"' : '' %>>
         <%- authorName %>
     </author>
 
